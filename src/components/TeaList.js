@@ -3,18 +3,29 @@ import Data from "../data.json";
 import TeaItem from "./TeaItem";
 import Search from "./Search";
 
-const TeaList = () => {
-  const [filteredResults, setFilteredResults] = useState(Data);
+// Search
+const filterPosts = (Data, query) => {
+  if (query) {
+    const filteredData = Data.filter((item) => {
+      return Object.values(item)
+        .join("")
+        .toLowerCase()
+        .includes(query.toLowerCase());
+    });
+    return filteredData;
+  } else {
+    return Data;
+  }
+};
 
-  useEffect(() => {
-    setFilteredResults(filteredResults);
-  }, [filteredResults, setFilteredResults]);
+const TeaList = () => {
+  const { search } = window.location;
+  const query = new URLSearchParams(search).get("s");
+  const [searchQuery, setSearchQuery] = useState(query || "");
+  const filteredPosts = filterPosts(Data, searchQuery);
 
   const renderList = () => {
-    if (!filteredResults) {
-      return;
-    }
-    return filteredResults.map((item) => {
+    return filteredPosts.map((item) => {
       return (
         <div className="column flex-basis-item" key={item.id}>
           <TeaItem
@@ -32,10 +43,7 @@ const TeaList = () => {
 
   return (
     <div className="notification is-primary">
-      <Search
-        filteredResults={filteredResults}
-        setFilteredResults={setFilteredResults}
-      />
+      <Search searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       <div className="columns is-flex-wrap-wrap">{renderList()}</div>
     </div>
   );
