@@ -1,0 +1,66 @@
+[
+  {
+    "id": 0,
+    "title": "Jasmin Tee",
+    "type": "Grüntee",
+    "price": 3.5,
+    "sessional": true,
+    "description": "Lorem Ipsum"
+  },
+  {
+    "id": 1,
+    "title": "Darjeeling Tee",
+    "type": "Schwarztee",
+    "price": 3.5,
+    "sessional": false,
+    "description": "Lorem Ipsum"
+  },
+  {
+    "id": 2,
+    "title": "Rote Clara",
+    "type": "Früchtetee",
+    "price": 3.5,
+    "sessional": true,
+    "description": "Lorem Ipsum"
+  },
+  {
+    "id": 3,
+    "title": "Gebrannte Mandel",
+    "type": "Früchtetee",
+    "price": 3.5,
+    "sessional": false,
+    "description": "making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web s"
+  },
+  {
+    "id": 4,
+    "title": "Jasmin Tee",
+    "type": "Grüntee",
+    "price": 3.5,
+    "sessional": true,
+    "description": "Lorem Ipsum"
+  },
+  {
+    "id": 5,
+    "title": "Darjeeling Tee 2",
+    "type": "Schwarztee",
+    "price": 3.5,
+    "sessional": false,
+    "description": "Lorem Ipsum"
+  },
+  {
+    "id": 6,
+    "title": "SADASa",
+    "type": "Früchtetee",
+    "price": 3.5,
+    "sessional": true,
+    "description": "Lorem Ipsum"
+  },
+  {
+    "id": 7,
+    "title": "Gebrannte ManasdAdel",
+    "type": "Früchtetee",
+    "price": 3.5,
+    "sessional": false,
+    "description": "dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsu"
+  }
+]
